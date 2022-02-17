@@ -12,3 +12,10 @@ Cypress.Commands.add('login', (email, password) => {
   cy.get('#SubmitLogin').click()
 
 })
+
+
+Cypress.Commands.add('search', (product) => {
+
+  cy.get('#search_query_top').type(product)
+  cy.get('.button-search').click()
+})
