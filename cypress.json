@@ -1,4 +1,15 @@
 {
     "chromeWebSecurity": false,
-    "video":false
+    "video":false,
+
+    "reporter": "mochawesome",
+    "reporterOptions": {
+        "reportDir": "reports",
+        "reportFilename": "test-run-report",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "charts": true
+    }
+
 }
