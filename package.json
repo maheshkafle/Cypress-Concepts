@@ -5,6 +5,9 @@
   "main": "index.js",
   "scripts": {
     "cypress:open": "cypress open",
+    "merge-report": "mochawesome-merge reports/*.json -o reports/output.json",
+    "generate-mochawesome-report": "marge reports/output.json --reportDir ./ --inline",
+    "generate-test-report":"npm run merge-report && npm run generate-mochawesome-report",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,6 +22,9 @@
   "homepage": "https://github.com/maheshkafle/Cypress-Concepts#readme",
   "devDependencies": {
     "cypress": "^9.4.1",
-    "cypress-file-upload": "^5.0.8"
+    "cypress-file-upload": "^5.0.8",
+    "mochawesome": "^7.0.1",
+    "mochawesome-merge": "^4.2.1",
+    "mochawesome-report-generator": "^6.0.1"
   }
 }
