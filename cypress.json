@@ -1,4 +1,5 @@
-{
+{   
+    "baseUrl": "https://reqres.in/",
     "chromeWebSecurity": false,
     "video":false,
 
